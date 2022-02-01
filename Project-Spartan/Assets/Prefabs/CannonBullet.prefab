@@ -206,10 +206,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90d341047d9a8b1418a2fb779113c851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 50
   damage: 1
   direction: {x: 1, y: 0, z: 1}
-  destroyposition: 50
 --- !u!114 &-954800783634022948
 MonoBehaviour:
   m_ObjectHideFlags: 0

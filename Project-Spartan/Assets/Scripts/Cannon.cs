@@ -8,8 +8,7 @@ public class Cannon : MonoBehaviour
     [SerializeField] int damage = 1;
 
     [SerializeField] Vector3 direction = new Vector3(1, 0, 0);
-     GameObject CannonBullet;
-     [SerializeField] float destroyposition = 10f;
+    GameObject CannonBullet;
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +24,12 @@ public class Cannon : MonoBehaviour
 
         Movementforward();
 
-if (transform.position.x > destroyposition)
-            Destroy(gameObject);
+        if (transform.position.x > 10)
+            ScaleChange();
+
+        if (transform.position.z > 10)
+            ScaleChange();
+
 
     }
     void Movementforward()
@@ -35,5 +38,10 @@ if (transform.position.x > destroyposition)
         transform.Translate(speed * Time.deltaTime * direction);
 
     }
+    void ScaleChange()
+    {
 
+        transform.localScale = new Vector3(2, 2, 2);
+
+    }
 }
