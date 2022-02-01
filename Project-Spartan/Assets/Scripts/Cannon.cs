@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class Cannon : MonoBehaviour
 {
-    [SerializeField] float speed = 2f;
-    [SerializeField] Vector3 direction = new Vector3(1, 0, 0);
+    [SerializeField] float speed = 20f;
     [SerializeField] int damage = 1;
+
+    [SerializeField] Vector3 direction = new Vector3(1, 0, 0);
+
 
     // Start is called before the first frame update
     void Start()
     {
-         Debug.Log(damage);
+        Debug.Log(damage);
 
 
     }
@@ -19,7 +21,9 @@ public class Cannon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Movementforward();
+        
+            Movementforward();
+
 
     }
     void Movementforward()

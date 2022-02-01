@@ -8,12 +8,12 @@ public class GeneratorController : MonoBehaviour
     [SerializeField] GameObject cannonBullet2;
     [SerializeField] GameObject cannonBullet3;
 
-    [SerializeField] float spawnrate = 3f;
-    [SerializeField] float spawndelay = 0.3f;
+    //[SerializeField] float spawnrate = 3f;
+    //[SerializeField] float spawndelay = 0.3f;
 
     // Start is called before the first frame update
     void Start()
-    {                 //ACTIVAR PARA DESAFIO DE INSTANCIAS//
+    {                 //ACTIVAR O DESACTIVAR PARA DESAFIO DE INSTANCIAS//
         //InvokeRepeating("FireCannonBullet", spawndelay, spawnrate);
         //InvokeRepeating("FireCannonBullet2", spawndelay, spawnrate);
         //InvokeRepeating("FireCannonBullet3", spawndelay, spawnrate);
@@ -25,7 +25,7 @@ public class GeneratorController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //PARA DESAFIO COMPLEMENTARIO//
+        //ACTIVAR O DESACTIVAR PARA DESAFIO COMPLEMENTARIO//
         Inputs();
     }
     void FireCannonBullet()

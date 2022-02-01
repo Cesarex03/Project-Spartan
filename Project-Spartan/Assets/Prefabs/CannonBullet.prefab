@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 4456657981242733063}
   - component: {fileID: 2219925907851680840}
   - component: {fileID: 708233464263679074}
-  - component: {fileID: 4885249718052540706}
   - component: {fileID: 3562560575208559553}
+  - component: {fileID: 5446005939375710378}
   m_Layer: 0
   m_Name: CannonBullet
   m_TagString: Untagged
@@ -97,21 +97,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4885249718052540706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 938025543546155893}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2519f22ce3e0aed4c962f9851a8a53f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  direction: {x: 1, y: 0, z: 0}
-  damage: 1
 --- !u!82 &3562560575208559553
 AudioSource:
   m_ObjectHideFlags: 0
@@ -124,7 +109,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 52b5a31096586f541ab9dc9fb39086c6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -208,3 +193,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &5446005939375710378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938025543546155893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90d341047d9a8b1418a2fb779113c851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 20
+  damage: 1
+  direction: {x: 1, y: 0, z: -1}
