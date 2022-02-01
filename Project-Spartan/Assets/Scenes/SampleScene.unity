@@ -380,6 +380,9 @@ MonoBehaviour:
   cannonBullet: {fileID: 938025543546155893, guid: 3eeadb95503ed4c41859bf6c629f50d0, type: 3}
   cannonBullet2: {fileID: 938025543546155893, guid: b7441584d3fa88d419f3d7aca0fd64bf, type: 3}
   cannonBullet3: {fileID: 938025543546155893, guid: 892f051dd5180e24e8c7bab0be7e8ebb, type: 3}
+  canShoot: 1
+  timpePass: 0
+  cooldown: 0.5
 --- !u!4 &805970027
 Transform:
   m_ObjectHideFlags: 0

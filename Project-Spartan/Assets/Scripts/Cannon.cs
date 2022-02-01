@@ -8,7 +8,8 @@ public class Cannon : MonoBehaviour
     [SerializeField] int damage = 1;
 
     [SerializeField] Vector3 direction = new Vector3(1, 0, 0);
-
+     GameObject CannonBullet;
+     [SerializeField] float destroyposition = 10f;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +22,11 @@ public class Cannon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-            Movementforward();
 
+        Movementforward();
+
+if (transform.position.x > destroyposition)
+            Destroy(gameObject);
 
     }
     void Movementforward()

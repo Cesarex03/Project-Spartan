@@ -5,6 +5,7 @@ using UnityEngine;
 public class CannonMovement : MonoBehaviour
 {
     [SerializeField] float speedcannon = 2f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +36,7 @@ public class CannonMovement : MonoBehaviour
     {
 
         transform.Translate(speedcannon * Time.deltaTime * direction);
+
     }
 
 }

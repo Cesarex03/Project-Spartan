@@ -720,4 +720,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4938dd70afdddd04a8ab02c87d406438, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedcannon: 2
+  speedcannon: 10

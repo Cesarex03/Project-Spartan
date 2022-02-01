@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 708233464263679074}
   - component: {fileID: 4885249718052540706}
   - component: {fileID: -5762172116873555178}
+  - component: {fileID: 1148136029834514338}
   m_Layer: 0
   m_Name: CannonBullet2
   m_TagString: Untagged
@@ -109,9 +110,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90d341047d9a8b1418a2fb779113c851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 50
   damage: 1
   direction: {x: 1, y: 0, z: 0}
+  destroyposition: 50
 --- !u!82 &-5762172116873555178
 AudioSource:
   m_ObjectHideFlags: 0
@@ -208,3 +210,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1148136029834514338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938025543546155893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 831692821cf6a614fb0e6fa0a6cfa268, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyposition: 50
