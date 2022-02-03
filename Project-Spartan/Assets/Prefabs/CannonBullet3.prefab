@@ -113,7 +113,6 @@ MonoBehaviour:
   speed: 50
   damage: 1
   direction: {x: 1, y: 0, z: -1}
-  destroyposition: 50
 --- !u!82 &-9153528073657477087
 AudioSource:
   m_ObjectHideFlags: 0
