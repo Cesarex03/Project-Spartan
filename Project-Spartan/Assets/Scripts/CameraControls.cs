@@ -15,25 +15,27 @@ public class CameraControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F1))
+        if (Input.GetKeyDown(KeyCode.F1)){
 
             EnableCamera(0,true);
             EnableCamera(1,false);
             EnableCamera(2,false);
+        }
 
-        if (Input.GetKeyDown(KeyCode.F2))
+        if (Input.GetKeyDown(KeyCode.F2)){
 
             EnableCamera(0,false);
             EnableCamera(1,true);
             EnableCamera(2,false);
-
-        if (Input.GetKeyDown(KeyCode.F3))
+        }
+        if (Input.GetKeyDown(KeyCode.F3)){
 
             EnableCamera(0,false);
             EnableCamera(1,false);
             EnableCamera(2,true);
-       
+        }
     }
+    
     void EnableCamera(int position, bool status){
 
         cameras[position].SetActive(status);
