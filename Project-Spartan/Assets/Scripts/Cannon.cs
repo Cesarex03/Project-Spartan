@@ -24,10 +24,7 @@ public class Cannon : MonoBehaviour
 
         Movementforward();
 
-        if (transform.position.x > 10)
-            ScaleChange();
-
-        if (transform.position.z > 10)
+        if (Input.GetKey(KeyCode.Space))
             ScaleChange();
 
 
