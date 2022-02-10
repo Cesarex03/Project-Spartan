@@ -48,25 +48,32 @@ public class GeneratorController : MonoBehaviour
     void Inputs()
     {
 
-        if (Input.GetKeyDown(KeyCode.J) && canShoot)
+        if (Input.GetKeyDown(KeyCode.E) && canShoot)
         {
 
             FireCannonBullet();
             canShoot = false;
 
         }
-        if (Input.GetKeyDown(KeyCode.K) && canShoot)
+        if (Input.GetKeyDown(KeyCode.R) && canShoot)
         {
 
             FireCannonBullet2();
             canShoot = false;
         }
-        if (Input.GetKeyDown(KeyCode.L) && canShoot)
+        if (Input.GetKeyDown(KeyCode.F) && canShoot)
         {
 
             FireCannonBullet3();
             canShoot = false;
         }
+        TimerBetweenBullets();
+
+
+    }
+
+    void TimerBetweenBullets()
+    {
         if (!canShoot)
         {
             timpePass += Time.deltaTime;
@@ -77,9 +84,5 @@ public class GeneratorController : MonoBehaviour
             canShoot = true;
         }
 
-
     }
-
-
-
-}
+    }
