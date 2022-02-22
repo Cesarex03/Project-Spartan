@@ -22,8 +22,8 @@ public class EnemyMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
-currentpoint = 0;
+        Cannon_1 = GameObject.Find("Cannon_1");
+        currentpoint = 0;
     }
 
     // Update is called once per frame
@@ -70,19 +70,21 @@ currentpoint = 0;
         transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, speed * Time.deltaTime);
     }
 
-    void Patrol(){
+    void Patrol()
+    {
 
-    if(transform.position != patrolpoints[currentpoint].transform.position){
-transform.position = Vector3.MoveTowards(transform.position,patrolpoints[currentpoint].transform.position, speedpatrol * Time.deltaTime);
+        if (transform.position != patrolpoints[currentpoint].transform.position)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, patrolpoints[currentpoint].transform.position, speedpatrol * Time.deltaTime);
+        }
+        else
+            currentpoint = (currentpoint + 1) % patrolpoints.Length;
+
+
+
+
+
     }
-    else
-    currentpoint = (currentpoint + 1)%patrolpoints.Length;
 
-    
-    
-
-    
-    }
-    
 
 }
