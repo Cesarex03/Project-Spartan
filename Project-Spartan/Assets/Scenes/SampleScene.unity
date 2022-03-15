@@ -2082,6 +2082,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 364581046420390058, guid: 2cd48446140ab424b80f0a9695bcaabc, type: 3}
   m_PrefabInstance: {fileID: 2001483475}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1917006229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917006224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6d4a46fbb4e51249bda17ab5a3797fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1949908261
 GameObject:
   m_ObjectHideFlags: 0
@@ -2198,10 +2210,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1228528296}
     m_Modifications:
-    - target: {fileID: 4652560369910294531, guid: 1678722450532284c967f51741b013b9, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 06921533fe9842e4bb650d1e32816f90, type: 2}
     - target: {fileID: 5455339602152224470, guid: 1678722450532284c967f51741b013b9, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -2307,10 +2315,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4588572528193628649, guid: e22ad25a8554d224eb260547af49e2ed, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 06921533fe9842e4bb650d1e32816f90, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e22ad25a8554d224eb260547af49e2ed, type: 3}
 --- !u!1001 &8346510984480428437
@@ -2320,10 +2324,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1228528296}
     m_Modifications:
-    - target: {fileID: 2301676401759576039, guid: e85db77a1599a294f97b42e99d5cd9fc, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 06921533fe9842e4bb650d1e32816f90, type: 2}
     - target: {fileID: 4749088486079720310, guid: e85db77a1599a294f97b42e99d5cd9fc, type: 3}
       propertyPath: m_Name
       value: Token
