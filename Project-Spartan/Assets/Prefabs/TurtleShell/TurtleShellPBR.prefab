@@ -797,11 +797,12 @@ Transform:
   m_GameObject: {fileID: 1774625739149480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
   m_Children:
   - {fileID: 4968209632078062}
   - {fileID: 4148951095833812}
   - {fileID: 6507527016831128991}
+  - {fileID: 2634645545056641364}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -844,6 +845,11 @@ MonoBehaviour:
   direction: {x: 0, y: 0, z: 1}
   targetview: {fileID: 0}
   enemyState: 1
+  shootOrigin: {fileID: 1140837056368921915}
+  shootCooldown: 1
+  timetoAttack: 0
+  rayDist: 8
+  enemyProjectile: {fileID: 445086274043281172, guid: 3a8894cb22f0ddb46ba151619bba151e, type: 3}
 --- !u!135 &8022477163009221570
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1173,9 +1179,9 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0, g: 0.75037575, b: 1, a: 1}
-  m_Intensity: 8.91
+  m_Intensity: 45.16
   m_Range: 3.35
-  m_SpotAngle: 53
+  m_SpotAngle: 112
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -1223,3 +1229,33 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1140837056368921915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2634645545056641364}
+  m_Layer: 0
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2634645545056641364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1140837056368921915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.13, y: 0.19, z: 1.43}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4906828391645816}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -9,6 +9,7 @@ public class Cannon : MonoBehaviour
 
     [SerializeField] Vector3 direction = new Vector3(1, 0, 0);
     GameObject CannonBullet;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -41,4 +42,6 @@ public class Cannon : MonoBehaviour
         transform.localScale = new Vector3(2, 2, 2);
 
     }
+    
+
 }
