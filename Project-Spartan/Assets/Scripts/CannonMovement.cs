@@ -14,7 +14,7 @@ public class CannonMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-  mgInventory = GetComponent<InventoryManager>();
+        mgInventory = GetComponent<InventoryManager>();
     }
 
     // Update is called once per frame
@@ -59,6 +59,9 @@ public class CannonMovement : MonoBehaviour
 
         if (other.gameObject.CompareTag("Token"))
         {
+            Debug.Log(other.GetComponent<GemType>().typeGem);
+            Debug.Log((int)other.GetComponent<GemType>().typeGem);
+            GameManager.instance.gemQuantity[(int)other.GetComponent<GemType>().typeGem]++;
             Debug.Log(name + " Trigger con " + other.gameObject.name);
             GameObject token = other.gameObject;
             token.SetActive(false);
@@ -75,10 +78,11 @@ public class CannonMovement : MonoBehaviour
 
         if (Physics.Raycast(pointerOrigin.transform.position, pointerOrigin.transform.TransformDirection(Vector3.forward), out hit, rayDist))
         {
-           if (hit.transform){
+            if (hit.transform)
+            {
 
-               Debug.Log(" ON TARGET ");
-           }
+                Debug.Log(" ON TARGET ");
+            }
 
         }
 
@@ -89,7 +93,7 @@ public class CannonMovement : MonoBehaviour
         Vector3 puntob = pointerOrigin.transform.TransformDirection(Vector3.right) * rayDist;
         Gizmos.DrawRay(pointerOrigin.transform.position, puntob);
     }
-     private void UseItemInventoryOne()
+    private void UseItemInventoryOne()
     {
         if (Input.GetKeyDown(KeyCode.G) && mgInventory.InventoryOneHas())
         {
@@ -102,7 +106,7 @@ public class CannonMovement : MonoBehaviour
     private void UseToken(GameObject token)
     {
         token.SetActive(true);
-        token.transform.position = transform.position + (Vector3.forward  * 2f);
+        token.transform.position = transform.position + (Vector3.forward * 2f);
     }
 
 }
